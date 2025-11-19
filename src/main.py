@@ -1,6 +1,6 @@
-def main():
-    print("Hello from event-orders!")
+from fastapi import FastAPI
+from src.middlewares import setup_middlewares
 
+app = FastAPI()
 
-if __name__ == "__main__":
-    main()
+setup_middlewares(app)
