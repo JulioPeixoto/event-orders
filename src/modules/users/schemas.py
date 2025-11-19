@@ -1,6 +1,7 @@
 from typing import Optional
-from sqlmodel import SQLModel
+
 from pydantic import EmailStr
+from sqlmodel import SQLModel
 
 
 class UserBase(SQLModel):

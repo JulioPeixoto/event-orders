@@ -1,7 +1,11 @@
-from typing import Optional, List
+from typing import TYPE_CHECKING, List, Optional
+
 from sqlmodel import Field, Relationship
+
 from src.modules.shared.models import TimestampModel
-from src.modules.orders.models import Order
+
+if TYPE_CHECKING:
+    from src.modules.orders.models import Order
 
 
 class User(TimestampModel, table=True):

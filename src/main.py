@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+
 from src.middlewares import setup_middlewares
-from src.modules.users.routes import router as users_router
 from src.modules.orders.routes import router as orders_router
+from src.modules.users.routes import router as users_router
 
 app = FastAPI(prefix="/api/v1")
 

@@ -1,4 +1,5 @@
 from fastapi.middleware.cors import CORSMiddleware
+
 from src.core.config import settings
 
 

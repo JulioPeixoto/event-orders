@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from src.middlewares.cors import setup_cors
 
 
